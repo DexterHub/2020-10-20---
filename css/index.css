@@ -53,10 +53,45 @@ html {
   top: 0;
   left: 0;
 }
+.loading {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+.loading .sailboat {
+  position: absolute;
+  top: 74.13333333vw;
+  left: 19.73333333vw;
+  width: 10.8vw;
+  height: 18.53333333vw;
+}
+.loading .linebg {
+  position: absolute;
+  top: 92.4vw;
+  left: 19.73333333vw;
+  width: 60.8vw;
+  height: 3.86666667vw;
+}
+.loading .line {
+  position: absolute;
+  top: 92.4vw;
+  left: 19.73333333vw;
+  width: 60.8vw;
+  height: 3.86666667vw;
+}
+.loading p {
+  position: absolute;
+  top: 99.33333333vw;
+  left: 46.93333333vw;
+  color: #fff;
+  font-size: 4.93333333vw;
+}
 .home {
   position: absolute;
   width: 100%;
-  height: auto;
+  height: 100%;
+  background: url("../img/layerbg.png");
 }
 .home .bg {
   position: absolute;
@@ -72,6 +107,13 @@ html {
   width: 16.4vw;
   height: 22vw;
   margin-left: -8.2vw;
+}
+.home .window {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 120vw;
 }
 .home .music {
   position: absolute;
@@ -95,6 +137,41 @@ html {
   width: 100%;
   height: 100%;
 }
+.home .sofa {
+  position: absolute;
+  top: 97.33333333vw;
+  left: 16.8vw;
+  width: 72.66666667vw;
+  height: 40.13333333vw;
+}
+.home .person {
+  position: absolute;
+  top: 91.2vw;
+  left: 14.8vw;
+  width: 72.66666667vw;
+  height: 40.13333333vw;
+}
+.home .person img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.home .lamp {
+  position: absolute;
+  top: 97.06666667vw;
+  left: 4.66666667vw;
+  width: 14.93333333vw;
+  height: 28.26666667vw;
+}
+.home .cabinet {
+  position: absolute;
+  top: 99.33333333vw;
+  right: 0.93333333vw;
+  width: 14.93333333vw;
+  height: 21.86666667vw;
+}
 .home .slogan {
   position: absolute;
   top: 34.13333333vw;
@@ -102,9 +179,23 @@ html {
   width: 94.93333333vw;
   height: 44.53333333vw;
 }
+.home .line2 {
+  position: absolute;
+  top: 2.26666667vw;
+  left: 4.26666667vw;
+  width: 91.6vw;
+  height: 188.26666667vw;
+}
+.home .line3 {
+  position: absolute;
+  top: 4.26666667vw;
+  left: 2.13333333vw;
+  width: 96vw;
+  height: 184.26666667vw;
+}
 .home .text {
   position: absolute;
-  top: 151.46666667vw;
+  top: 147.46666667vw;
   left: 50%;
   width: 65.73333333vw;
   height: 16.8vw;
@@ -112,7 +203,7 @@ html {
 }
 .home .arrow {
   position: absolute;
-  top: 170.93333333vw;
+  top: 168vw;
   left: 50%;
   width: 3.73333333vw;
   height: 1.86666667vw;
@@ -120,7 +211,7 @@ html {
 }
 .home .button {
   position: absolute;
-  top: 174.8vw;
+  top: 172.8vw;
   left: 50%;
   width: 31.6vw;
   height: 14.26666667vw;
@@ -133,7 +224,7 @@ html {
 .page1 {
   position: absolute;
   width: 100%;
-  height: auto;
+  height: 100%;
 }
 .page1 .music {
   position: absolute;
@@ -192,7 +283,7 @@ html {
 .page2 {
   position: absolute;
   width: 100%;
-  height: auto;
+  height: 100%;
 }
 .page2 .music {
   position: absolute;
@@ -1371,11 +1462,13 @@ html {
   height: 76.4vw;
   margin-left: -32.33333333vw;
 }
-@media screen and (max-height: 667px) {
+@media screen and (max-height: 736px) {
   .page1 {
+    top: -6.66666667vw;
     transform: scale(0.9);
   }
   .page2 {
+    top: -12vw;
     transform: scale(0.85);
   }
   .page3 .interim img:nth-child(1) {
@@ -1395,14 +1488,87 @@ html {
     transform: scale(0.9);
     top: -6.66666667vw;
   }
-}
-@media screen and (max-height: 812px) {
-  .page3 .share .qr {
-    bottom: 7.2vw;
-    left: 7.2vw;
+  .page4 .interim img:nth-child(1) {
+    top: 27.2vw;
   }
-  .page3 .share .product {
-    bottom: 0;
-    right: 0;
+  .page4 .interim img:nth-child(2) {
+    top: 24vw;
+  }
+  .page4 .interim img:nth-child(3) {
+    top: 117.33333333vw;
+  }
+  .page4 .testingResult {
+    transform: scale(0.9);
+    top: -9.6vw;
+  }
+  .page4 .share {
+    transform: scale(0.85);
+    top: -13.33333333vw;
+  }
+  .page4 .share .qr {
+    bottom: -24vw;
+  }
+  .page4 .share .product {
+    bottom: -32vw;
+    right: -9.33333333vw;
+  }
+  .page5 .interim img:nth-child(1) {
+    top: 27.2vw;
+  }
+  .page5 .interim img:nth-child(2) {
+    top: 24vw;
+  }
+  .page5 .interim img:nth-child(3) {
+    top: 117.33333333vw;
+  }
+  .page5 .testingResult {
+    transform: scale(0.85);
+    top: -9.6vw;
+  }
+  .page5 .share {
+    transform: scale(0.85);
+    top: -13.33333333vw;
+  }
+  .page5 .share .qr {
+    bottom: -24vw;
+  }
+  .page5 .share .product {
+    bottom: -32vw;
+    right: -9.33333333vw;
+  }
+  .page7 .box {
+    height: auto;
+    transform: scale(0.85);
+  }
+  .page7 .box .music {
+    top: 13.33333333vw;
+  }
+  .page7 .box .gift {
+    top: 64.26666667vw;
+  }
+  .page7 .box .title {
+    top: 29.46666667vw;
+  }
+  .page7 .box .text {
+    top: 151.46666667vw;
+  }
+  .page7 .box .button {
+    top: 183.46666667vw;
+  }
+  .page7 .box2 {
+    height: auto;
+    transform: scale(0.85);
+  }
+  .page7 .box2 input:nth-of-type(1) {
+    top: 155.2vw;
+  }
+  .page7 .box2 input:nth-of-type(2) {
+    top: 165.06666667vw;
+  }
+  .page7 .box2 input:nth-of-type(3) {
+    top: 173.86666667vw;
+  }
+  .page7 .box2 .button {
+    top: 186.66666667vw;
   }
 }

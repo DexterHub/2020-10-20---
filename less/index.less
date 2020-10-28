@@ -70,10 +70,45 @@ html {
 @screenWidth: 750;
 //换算vw
 @vw : @screenWidth/100vw;
+.loading {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    .sailboat {
+        position: absolute;
+        top: 556 / @vw;
+        left: 148 / @vw;
+        width: 81 / @vw;
+        height: 139 / @vw;
+    }
+    .linebg {
+        position: absolute;
+        top: 693 / @vw;
+        left: 148 / @vw;
+        width: 456 / @vw;
+        height: 29 / @vw;
+    }
+    .line {
+        position: absolute;
+        top: 693 / @vw;
+        left: 148 / @vw;
+        width: 456 / @vw;
+        height: 29 / @vw;
+    }
+    p {
+        position: absolute;
+        top: 745 / @vw;
+        left: 352 / @vw;
+        color: #fff;
+        font-size: 37 / @vw;
+    }
+}
 .home {
     position: absolute;
     width: 100%;
-    height: auto;
+    height: 100%;
+    background: url("../img/layerbg.png");
     .bg {
         position: absolute;
         top: 0;
@@ -88,6 +123,13 @@ html {
         width: 123 / @vw;
         height: 165 / @vw;
         margin-left: -61.5 / @vw;
+    }
+    .window {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 900 / @vw;
     }
     .music {
         position: absolute;
@@ -111,6 +153,41 @@ html {
             height: 100%;
         }
     }
+    .sofa {
+        position: absolute;
+        top: 730 / @vw;
+        left: 126 / @vw;
+        width: 545 / @vw;
+        height: 301 / @vw;
+    }
+    .person {
+        position: absolute;
+        top: 684 / @vw;
+        left: 111 / @vw;
+        width: 545 / @vw;
+        height: 301 / @vw;
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .lamp {
+        position: absolute;
+        top: 728 / @vw;
+        left: 35 / @vw;
+        width: 112 / @vw;
+        height: 212 / @vw;
+    }
+    .cabinet {
+        position: absolute;
+        top: 745 / @vw;
+        right: 7 / @vw;
+        width: 112 / @vw;
+        height: 164 / @vw;
+    }
     .slogan {
         position: absolute;
         top: 256 / @vw;
@@ -118,9 +195,23 @@ html {
         width: 712 / @vw;
         height: 334 / @vw;
     }
+    .line2 {
+        position: absolute;
+        top: 17 / @vw;
+        left: 32 / @vw;
+        width: 687 / @vw;
+        height: 1412 / @vw;
+    }
+    .line3 {
+        position: absolute;
+        top: 32 / @vw;
+        left: 16 / @vw;
+        width: 720 / @vw;
+        height: 1382 / @vw;
+    }
     .text {
         position: absolute;
-        top: 1136 / @vw;
+        top: 1106 / @vw;
         left: 50%;
         width: 493 / @vw;
         height: 126 / @vw;
@@ -128,7 +219,7 @@ html {
     }
     .arrow {
         position: absolute;
-        top: 1282 / @vw;
+        top: 1260 / @vw;
         left: 50%;
         width: 28 / @vw;
         height: 14 / @vw;
@@ -136,7 +227,7 @@ html {
     }
     .button {
         position: absolute;
-        top: 1311 / @vw;
+        top: 1296 / @vw;
         left: 50%;
         width: 237 / @vw;
         height: 107 / @vw;
@@ -150,7 +241,7 @@ html {
 .page1 {
     position: absolute;
     width: 100%;
-    height: auto;
+    height: 100%;
     .music {
         position: absolute;
         top: 70 / @vw;
@@ -209,7 +300,7 @@ html {
 .page2 {
     position: absolute;
     width: 100%;
-    height: auto;
+    height: 100%;
     .music {
         position: absolute;
         top: 70 / @vw;
@@ -1387,11 +1478,13 @@ html {
         }
     }
 }
-@media screen and (max-height: 667px) {
+@media screen and (max-height: 736px) {
     .page1 {
+        top: -50 / @vw;
         transform: scale(0.9);
     }
     .page2 {
+        top: -90 / @vw;
         transform: scale(0.85);
     }
     .page3 {
@@ -1415,17 +1508,96 @@ html {
             top: -50 / @vw;
         }
     }
-}
-@media screen and (max-height: 812px){
-    .page3 {
-        .share {
+    .page4 {
+        .interim {
+            img:nth-child(1){
+                top: 204 / @vw;
+            }
+            img:nth-child(2){
+                top: 180 / @vw;
+            }
+            img:nth-child(3){
+                top: 880 / @vw;
+            }    
+        }
+        .testingResult {
+            transform: scale(0.9);
+            top: -72 / @vw;
+        }
+        .share{
+            transform: scale(0.85);
+            top: -100 / @vw;
             .qr {
-                bottom: 54 / @vw;
-                left: 54 / @vw;
+                bottom: -180 / @vw;
             }
             .product {
-                bottom: 0;
-                right: 0;
+                bottom: -240 / @vw;
+                right: -70 / @vw;
+            }
+        }
+    }
+    .page5 {
+        .interim {
+            img:nth-child(1){
+                top: 204 / @vw;
+            }
+            img:nth-child(2){
+                top: 180 / @vw;
+            }
+            img:nth-child(3){
+                top: 880 / @vw;
+            }    
+        }
+        .testingResult {
+            transform: scale(0.85);
+            top: -72 / @vw;
+        }
+        .share{
+            transform: scale(0.85);
+            top: -100 / @vw;
+            .qr {
+                bottom: -180 / @vw;
+            }
+            .product {
+                bottom: -240 / @vw;
+                right: -70 / @vw;
+            }
+        }
+    }
+    .page7 {
+        .box {
+            height: auto;
+            transform: scale(0.85);
+            .music {
+                top: 100 / @vw;
+            } 
+            .gift {
+                top: 482 / @vw;
+            }
+            .title {
+                top: 221 / @vw;
+            }
+            .text {
+                top: 1136 / @vw;
+            }
+            .button {
+                top: 1376 / @vw;
+            }
+        }
+        .box2 {
+            height: auto;
+            transform: scale(0.85);
+            input:nth-of-type(1) {
+                top: 1164 / @vw;
+            }
+            input:nth-of-type(2) {
+                top: 1238 / @vw;
+            }
+            input:nth-of-type(3) {
+                top: 1304 / @vw;
+            }
+            .button {
+                top: 1400 / @vw;
             }
         }
     }
