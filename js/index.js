@@ -1,22 +1,22 @@
 $(function(){
-    // var loading = setInterval(function() {
-    //     if ($(".loading .line").width() < 243) {
-    //         $(".loading .line").css("width", $(".loading .line").width() + 3 + 'px');
-    //         $("#text").html(parseInt($(".loading .line").width() / 2.42) + '%');
-    //         $(".loading .sailboat").css("left", $(".loading .line").width() + 40 + 'px');
-    //     } else {
-    //         $(".loading").fadeOut();
-    //         $(".home").fadeIn();
-    //         setTimeout(function() {
+    var loading = setInterval(function() {
+        if ($(".loading .line").width() < 243) {
+            $(".loading .line").css("width", $(".loading .line").width() + 3 + 'px');
+            $("#text").html(parseInt($(".loading .line").width() / 2.42) + '%');
+            $(".loading .sailboat").css("left", $(".loading .line").width() + 40 + 'px');
+        } else {
+            $(".loading").fadeOut();
+            $(".home").fadeIn();
+            setTimeout(function() {
                 
-    //             clearInterval(loading);
-    //         }, 100);
-    //     }
-    // }, 100);
-    // $(".home .button").on("click",function(){
-    //     $(".home").fadeOut();
-    //     $(".page1").fadeIn();
-    // })
+                clearInterval(loading);
+            }, 100);
+        }
+    }, 100);
+    $(".home .button").on("click",function(){
+        $(".home").fadeOut();
+        $(".page1").fadeIn();
+    })
     $('#photos').on("change", function (e) {
         var file = this.files[0];
         var src = window.URL.createObjectURL(file);
@@ -160,9 +160,7 @@ $(function(){
                     var c = document.querySelector('canvas');
                     console.log(c);
                     var url = c.toDataURL();
-                    var a = $("<a></a>").attr("href", url).attr("download", "img.png").appendTo("body");
-                    a[0].click();
-                    a.remove();
+                    var a = $("<img>").attr("src", url).appendTo("body");
                 });
             }, 400);
             //长按400毫秒
@@ -210,9 +208,7 @@ $(function(){
                     var c = document.querySelector('canvas');
                     console.log(c);
                     var url = c.toDataURL();
-                    var a = $("<a></a>").attr("href", url).attr("download", "img.png").appendTo("body");
-                    a[0].click();
-                    a.remove();
+                    var a = $("<img>").attr("src", url).appendTo("body");
                 });
             }, 400);
             //长按400毫秒
