@@ -6,14 +6,20 @@
     <meta name="viewport"
         content="width=device-width,target-densitydpi=device-dpi,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Document</title>
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/index.css?v=3">
 </head>
 <body>
-    <div class="loading">
-        <img src="img/loading-ship.png" class="sailboat">
-        <img src="img/loading-linebg.png" class="linebg">
-        <img src="img/loading-line.png" class="line">
-        <p>0%</p>
+    <div class="loading dn">
+        <div class="sailboat">
+            <img src="img/loading-ship.png">
+        </div>
+        <div class="linebg">
+            <img src="img/loading-linebg.png">
+        </div>
+        <div class="line">
+            <img src="img/loading-line.png">
+        </div>
+        <p id="text">0%</p>
     </div>
     <div class="home dn">
         <img src="img/home-bg.png" class="bg">
@@ -29,10 +35,14 @@
         <img src="img/cabinet.png" class="cabinet">
         <img src="img/sofa.png" class="sofa">
         <div class="person">
-            <img src="img/home-people.png" class="open">
             <img src="img/home-people1.png" class="closeEyes">
+            <img src="img/home-people.png" class="open">
         </div>
         <img src="img/home-slogan.png" class="slogan">
+        <div class="leaf">
+            <img src="img/home-tree2.png">
+            <img src="img/home-tree1.png">
+        </div>
         <img src="img/line.png" class="line2">
         <img src="img/line1.png" class="line3">
         <img src="img/home-text.png" class="text">
@@ -41,12 +51,16 @@
             <img src="img/home-button.png">
         </div>
     </div>
-    <div class="page1 dn">
+    <div class="page1">
         <div class="music">
             <img src="img/page1-muisc.png">
         </div>
         <img src="img/page1-logo.png" class="logo">
-        <img src="img/page1-picture.png" class="picture">
+        <img src="img/page1-picture.png" class="pictur">
+        <div class="box">
+            <input type="file" accept="image/gif,image/jpeg,image/jpg,image/png,image/svg" id="photos">
+            <img src="" id="box" class="picture">
+        </div>
         <img src="img/page1-shield.png" class="shield">
         <img src="img/page1-text.png" class="text">
         <div class="button">
@@ -57,6 +71,7 @@
         <div class="music">
             <img src="img/page1-muisc.png">
         </div>
+        <img src="img/page2-shield.png" class="shield">
         <img src="img/page1-logo.png" class="logo">
         <div class="content">
             <img src="img/parsent.png" class="picture">
@@ -75,7 +90,7 @@
         </div>
     </div>
     <div class="page3 dn">
-        <div class="interim dn">
+        <div class="interim">
             <img src="img/page3-RTB.png">
             <img src="img/page3-bottle.png">
             <img src="img/page3-text.png">
@@ -85,11 +100,12 @@
                 <img src="img/page1-muisc.png">
             </div>
             <img src="img/page1-logo.png" class="logo">
+            <img src="img/page6-shield.png" class="shield">
             <div class="content">
                 <img src="img/parsent2.png" class="picture">
-                <img src="img/page6-shield2.png">
-                <img src="img/page6-img.png">
             </div>
+            <img src="img/page6-shield2.png" class="shield2">
+            <img src="img/page6-img.png" class="shield3">
             <p><a href="javascript:;">Milk</a>成功battle节后综合症,进阶为</p>
             <img src="img/page6-title.png" class="title">
             <img src="img/page6-text.png" class="text">
@@ -100,16 +116,17 @@
                 <img src="img/page6-save.png">
             </div>
         </div>
-        <div class="share dn">
+        <div id="capture" class="share dn">
             <div class="music">
                 <img src="img/page1-muisc.png">
             </div>
             <img src="img/page1-logo.png" class="logo">
+            <img src="img/page6-shield.png" class="shield">
             <div class="content">
                 <img src="img/parsent2.png" class="picture">
-                <img src="img/page6-shield2.png">
-                <img src="img/page6-img.png">
             </div>
+            <img src="img/page6-shield2.png" class="shield2">
+            <img src="img/page6-img.png" class="shield3">
             <p><a href="javascript:;">Milk</a>成功battle节后综合症,进阶为</p>
             <img src="img/page6-title.png" class="title">
             <img src="img/page6-text.png" class="text">
@@ -124,7 +141,7 @@
         </div>
     </div>
     <div class="page4 dn">
-        <div class="interim dn">
+        <div class="interim">
             <img src="img/page4-RTB.png">
             <img src="img/page4-bottle.png">
             <img src="img/page4-text.png">
@@ -134,11 +151,12 @@
                 <img src="img/page1-muisc.png">
             </div>
             <img src="img/page1-logo.png" class="logo">
+            <img src="img/page8-shield.png" class="shield">
             <div class="content">
                 <img src="img/parsent2.png" class="picture">
-                <img src="img/page6-shield2.png">
-                <img src="img/page8-shield2.png">
             </div>
+            <img src="img/page6-shield2.png" class="shield2">
+            <img src="img/page8-shield2.png" class="shield3">
             <p><a href="javascript:;">Milk</a>成功battle节后综合症,进阶为</p>
             <img src="img/page8-title.png" class="title">
             <img src="img/page8-text.png" class="text">
@@ -149,31 +167,34 @@
                 <img src="img/page6-save.png">
             </div>
         </div>
-        <div class="share dn">
-            <div class="music">
-                <img src="img/page1-muisc.png">
+        <div id="capture2" class="share dn">
+            <div class="box2">
+                <div class="music">
+                    <img src="img/page1-muisc.png">
+                </div>
+                <img src="img/page1-logo.png" class="logo">
+                <img src="img/page8-shield.png" class="shield">
+                <div class="content">
+                    <img src="img/parsent2.png" class="picture">
+                </div>
+                <img src="img/page6-shield2.png" class="shield2">
+                <img src="img/page8-shield2.png" class="shield3">
+                <p><a href="javascript:;">Milk</a>成功battle节后综合症,进阶为</p>
+                <img src="img/page8-title.png" class="title">
+                <img src="img/page8-text.png" class="text">
+                <div class="stock">
+                    <img src="img/stock.png">
+                </div>
+                <div class="get">
+                    <img src="img/get.png">
+                </div>
+                <img src="img/QR.png" class="qr">
+                <img src="img/img2.png" class="product">
             </div>
-            <img src="img/page1-logo.png" class="logo">
-            <div class="content">
-                <img src="img/parsent2.png" class="picture">
-                <img src="img/page6-shield2.png">
-                <img src="img/page8-shield2.png">
-            </div>
-            <p><a href="javascript:;">Milk</a>成功battle节后综合症,进阶为</p>
-            <img src="img/page8-title.png" class="title">
-            <img src="img/page8-text.png" class="text">
-            <div class="stock">
-                <img src="img/stock.png">
-            </div>
-            <div class="get">
-                <img src="img/get.png">
-            </div>
-            <img src="img/QR.png" class="qr">
-            <img src="img/img2.png" class="product">
         </div>
     </div>
     <div class="page5 dn">
-        <div class="interim dn">
+        <div class="interim">
             <img src="img/page5-RTB.png">
             <img src="img/page5-bottle.png">
             <img src="img/page5-text.png">
@@ -183,11 +204,12 @@
                 <img src="img/page1-muisc.png">
             </div>
             <img src="img/page1-logo.png" class="logo">
+            <img src="img/page7-shield.png" class="shield">
             <div class="content">
                 <img src="img/parsent2.png" class="picture">
-                <img src="img/page6-shield2.png">
-                <img src="img/page8-start.png">
             </div>
+            <img src="img/page6-shield2.png" class="shield2">
+            <img src="img/page8-start.png" class="shield3">
             <p><a href="javascript:;">Milk</a>成功battle节后综合症,进阶为</p>
             <img src="img/page7-title.png" class="title">
             <img src="img/page7-text.png" class="text">
@@ -198,27 +220,30 @@
                 <img src="img/page6-save.png">
             </div>
         </div>
-        <div class="share dn">
-            <div class="music">
-                <img src="img/page1-muisc.png">
+        <div id="capture3" class="share dn">
+            <div class="box3">
+                <div class="music">
+                    <img src="img/page1-muisc.png">
+                </div>
+                <img src="img/page1-logo.png" class="logo">
+                <img src="img/page7-shield.png" class="shield">
+                <div class="content">
+                    <img src="img/parsent2.png" class="picture">
+                </div>
+                <img src="img/page6-shield2.png" class="shield2">
+                <img src="img/page8-start.png" class="shield3">
+                <p><a href="javascript:;">Milk</a>成功battle节后综合症,进阶为</p>
+                <img src="img/page7-title.png" class="title">
+                <img src="img/page7-text.png" class="text">
+                <div class="stock">
+                    <img src="img/stock.png">
+                </div>
+                <div class="get">
+                    <img src="img/get.png">
+                </div>
+                <img src="img/QR.png" class="qr">
+                <img src="img/img2.png" class="product">
             </div>
-            <img src="img/page1-logo.png" class="logo">
-            <div class="content">
-                <img src="img/parsent2.png" class="picture">
-                <img src="img/page6-shield2.png">
-                <img src="img/page8-start.png">
-            </div>
-            <p><a href="javascript:;">Milk</a>成功battle节后综合症,进阶为</p>
-            <img src="img/page7-title.png" class="title">
-            <img src="img/page7-text.png" class="text">
-            <div class="stock">
-                <img src="img/stock.png">
-            </div>
-            <div class="get">
-                <img src="img/get.png">
-            </div>
-            <img src="img/QR.png" class="qr">
-            <img src="img/img2.png" class="product">
         </div>
     </div>
     <!-- 抽奖失败 -->
@@ -231,8 +256,8 @@
         <img src="img/page9-title.png" class="text">
     </div>
     <!-- 抽奖成功 -->
-    <div class="page7">
-        <div class="box dn">
+    <div class="page7 dn">
+        <div class="box">
             <div class="music">
                 <img src="img/page1-muisc.png">
             </div>
@@ -251,9 +276,9 @@
             <img src="img/page1-logo.png" class="logo">
             <img src="img/page9-boa.png" class="gift">
             <img src="img/shield2.png" class="title">
-            <input type="text" value="姓名:">
-            <input type="text" value="电话:">
-            <input type="text" value="寄送地址:">
+            <span>姓名:</span><input type="text" value="" id="user">
+            <span>电话:</span><input type="text" value="" id="telephone">
+            <span>寄送地址:</span><input type="text" value="" id="address">
             <div class="button">
                 <img src="img/submit.png">
             </div>
@@ -267,5 +292,8 @@
             <img src="img/shield3.png" class="text">
         </div>
     </div>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/html2canvas.min.js"></script>
+    <script src="js/index.js?v=2"></script>
 </body>
 </html>

@@ -66,6 +66,10 @@ html {
   width: 10.8vw;
   height: 18.53333333vw;
 }
+.loading .sailboat img {
+  width: 100%;
+  height: 100%;
+}
 .loading .linebg {
   position: absolute;
   top: 92.4vw;
@@ -73,12 +77,20 @@ html {
   width: 60.8vw;
   height: 3.86666667vw;
 }
+.loading .linebg img {
+  width: 100%;
+  height: 100%;
+}
 .loading .line {
   position: absolute;
   top: 92.4vw;
   left: 19.73333333vw;
-  width: 60.8vw;
+  width: 0vw;
   height: 3.86666667vw;
+}
+.loading .line img {
+  width: 100%;
+  height: 100%;
 }
 .loading p {
   position: absolute;
@@ -132,6 +144,7 @@ html {
   left: 53.6vw;
   width: 9.46666667vw;
   height: 31.73333333vw;
+  animation: move 10s forwards;
 }
 .home .sailboat img {
   width: 100%;
@@ -158,6 +171,9 @@ html {
   width: 100%;
   height: 100%;
 }
+.home .person img:nth-child(2) {
+  animation: show 2s infinite;
+}
 .home .lamp {
   position: absolute;
   top: 97.06666667vw;
@@ -178,6 +194,28 @@ html {
   left: 2.66666667vw;
   width: 94.93333333vw;
   height: 44.53333333vw;
+}
+.home .leaf {
+  position: absolute;
+  top: 116.26666667vw;
+  right: -11.6vw;
+  width: 26.8vw;
+  height: 33.46666667vw;
+}
+.home .leaf img:nth-of-type(2) {
+  position: absolute;
+  bottom: 0vw;
+  left: 0vw;
+  width: 15.6vw;
+  height: 11.2vw;
+}
+.home .leaf img:nth-of-type(1) {
+  position: absolute;
+  top: -1.06666667vw;
+  left: -11.2vw;
+  width: 27.86666667vw;
+  height: 24vw;
+  animation: rotate 5s infinite;
 }
 .home .line2 {
   position: absolute;
@@ -244,6 +282,48 @@ html {
   width: 12.93333333vw;
   height: 17.2vw;
 }
+.page1 .box {
+  position: absolute;
+  top: 31.46666667vw;
+  left: 50%;
+  width: 91.86666667vw;
+  height: 106.8vw;
+  margin-left: -45.93333333vw;
+  clip-path: polygon(5% 13%, 50% 7%, 95% 13%, 95% 54%, 50% 97%, 5% 55%);
+  -webkit-clip-path: polygon(5% 13%, 50% 7%, 95% 13%, 95% 54%, 50% 97%, 5% 55%);
+  overflow: hidden;
+}
+.page1 .box img:nth-child(1) {
+  position: absolute;
+  top: 6.93333333vw;
+  left: 6.93333333vw;
+  width: 76.8vw;
+  height: 89.6vw;
+}
+.page1 .box #photos {
+  position: absolute;
+  top: 6.93333333vw;
+  left: 0;
+  width: 76.8vw;
+  height: 89.6vw;
+  opacity: 0;
+}
+.page1 .box #box {
+  position: absolute;
+  top: 6.93333333vw;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: auto;
+}
+.page1 .pictur {
+  position: absolute;
+  top: 38.13333333vw;
+  left: 50%;
+  width: 76.8vw;
+  height: 89.6vw;
+  margin-left: -38.4vw;
+}
 .page1 .shield {
   position: absolute;
   top: 31.46666667vw;
@@ -251,14 +331,7 @@ html {
   width: 91.86666667vw;
   height: 106.8vw;
   margin-left: -45.93333333vw;
-}
-.page1 .picture {
-  position: absolute;
-  top: 37.86666667vw;
-  left: 50%;
-  width: 76.8vw;
-  height: 89.6vw;
-  margin-left: -38.4vw;
+  overflow: hidden;
 }
 .page1 .text {
   position: absolute;
@@ -303,6 +376,14 @@ html {
   width: 12.93333333vw;
   height: 17.2vw;
 }
+.page2 .shield {
+  position: absolute;
+  top: 26.13333333vw;
+  left: 50%;
+  width: 91.86666667vw;
+  height: 106.8vw;
+  margin-left: -45.93333333vw;
+}
 .page2 .content {
   position: absolute;
   top: 26.13333333vw;
@@ -310,8 +391,9 @@ html {
   width: 91.86666667vw;
   height: 106.8vw;
   margin-left: -45.93333333vw;
-  background: url("../img/page2-shield.png");
-  background-size: 100% 100%;
+  clip-path: polygon(5% 13%, 50% 7%, 95% 13%, 95% 54%, 50% 97%, 5% 55%);
+  -webkit-clip-path: polygon(5% 13%, 50% 7%, 95% 13%, 95% 54%, 50% 97%, 5% 55%);
+  overflow: hidden;
 }
 .page2 .content img:nth-child(2) {
   position: absolute;
@@ -449,6 +531,14 @@ html {
   width: 12.93333333vw;
   height: 17.2vw;
 }
+.page3 .testingResult .shield {
+  position: absolute;
+  top: 26.13333333vw;
+  left: 50%;
+  width: 86.26666667vw;
+  height: 98.53333333vw;
+  margin-left: -43.13333333vw;
+}
 .page3 .testingResult .content {
   position: absolute;
   top: 26.13333333vw;
@@ -456,22 +546,9 @@ html {
   width: 86.26666667vw;
   height: 98.53333333vw;
   margin-left: -43.13333333vw;
-  background: url("../img/page6-shield.png");
-  background-size: 100% 100%;
-}
-.page3 .testingResult .content img:nth-child(2) {
-  position: absolute;
-  top: 0.26666667vw;
-  left: 2.13333333vw;
-  width: 84.26666667vw;
-  height: 98.13333333vw;
-}
-.page3 .testingResult .content img:nth-child(3) {
-  position: absolute;
-  top: 5.33333333vw;
-  left: 1.06666667vw;
-  width: 82.66666667vw;
-  height: 94.13333333vw;
+  clip-path: polygon(5% 13%, 50% 7%, 95% 13%, 95% 54%, 50% 97%, 5% 55%);
+  -webkit-clip-path: polygon(5% 13%, 50% 7%, 95% 13%, 95% 54%, 50% 97%, 5% 55%);
+  overflow: hidden;
 }
 .page3 .testingResult .content .picture {
   position: absolute;
@@ -480,6 +557,21 @@ html {
   width: 100vw;
   height: 195.6vw;
   margin-left: -50vw;
+}
+.page3 .testingResult .shield2 {
+  position: absolute;
+  top: 26.13333333vw;
+  left: 50%;
+  width: 86.26666667vw;
+  height: 98.53333333vw;
+  margin-left: -43.13333333vw;
+}
+.page3 .testingResult .shield3 {
+  position: absolute;
+  top: 34.4vw;
+  left: 4.26666667vw;
+  width: 82.66666667vw;
+  height: 94.13333333vw;
 }
 .page3 .testingResult p {
   position: absolute;
@@ -542,6 +634,8 @@ html {
   left: 0;
   width: 100%;
   height: 100%;
+  background: url("../img/bg.png") no-repeat;
+  background-size: 100% 100%;
 }
 .page3 .share .music {
   position: absolute;
@@ -561,6 +655,14 @@ html {
   width: 12.93333333vw;
   height: 17.2vw;
 }
+.page3 .share .shield {
+  position: absolute;
+  top: 19.2vw;
+  left: 50%;
+  width: 86.26666667vw;
+  height: 98.53333333vw;
+  margin-left: -43.13333333vw;
+}
 .page3 .share .content {
   position: absolute;
   top: 19.2vw;
@@ -568,22 +670,9 @@ html {
   width: 86.26666667vw;
   height: 98.53333333vw;
   margin-left: -43.13333333vw;
-  background: url("../img/page6-shield.png");
-  background-size: 100% 100%;
-}
-.page3 .share .content img:nth-child(2) {
-  position: absolute;
-  top: 0.26666667vw;
-  left: 2.13333333vw;
-  width: 84.26666667vw;
-  height: 98.13333333vw;
-}
-.page3 .share .content img:nth-child(3) {
-  position: absolute;
-  top: 5.33333333vw;
-  left: 1.06666667vw;
-  width: 82.66666667vw;
-  height: 94.13333333vw;
+  clip-path: polygon(5% 13%, 50% 7%, 95% 13%, 95% 54%, 50% 97%, 5% 55%);
+  -webkit-clip-path: polygon(5% 13%, 50% 7%, 95% 13%, 95% 54%, 50% 97%, 5% 55%);
+  overflow: hidden;
 }
 .page3 .share .content .picture {
   position: absolute;
@@ -592,6 +681,22 @@ html {
   width: 100vw;
   height: 195.6vw;
   margin-left: -50vw;
+}
+.page3 .share .shield2 {
+  position: absolute;
+  top: 19.2vw;
+  left: 50%;
+  width: 86.26666667vw;
+  height: 98.53333333vw;
+  margin-left: -43.13333333vw;
+}
+.page3 .share .shield3 {
+  position: absolute;
+  top: 19.2vw;
+  left: 50%;
+  width: 86.26666667vw;
+  height: 98.53333333vw;
+  margin-left: -43.13333333vw;
 }
 .page3 .share p {
   position: absolute;
@@ -652,15 +757,15 @@ html {
 }
 .page3 .share .qr {
   position: absolute;
-  bottom: -10.66666667vw;
-  left: 2.13333333vw;
+  bottom: 7.2vw;
+  left: 7.2vw;
   width: 16vw;
   height: 16vw;
 }
 .page3 .share .product {
   position: absolute;
-  bottom: -17.33333333vw;
-  right: -5.6vw;
+  bottom: 0;
+  right: 0;
   width: 49.06666667vw;
   height: 48.8vw;
 }
@@ -729,29 +834,24 @@ html {
   width: 12.93333333vw;
   height: 17.2vw;
 }
+.page4 .testingResult .shield {
+  position: absolute;
+  top: 26.13333333vw;
+  left: 50%;
+  width: 86.26666667vw;
+  height: 98.53333333vw;
+  margin-left: -43.13333333vw;
+}
 .page4 .testingResult .content {
   position: absolute;
-  top: 30vw;
+  top: 26.13333333vw;
   left: 50%;
-  width: 89.06666667vw;
-  height: 100.93333333vw;
-  margin-left: -44.53333333vw;
-  background: url("../img/page8-shield.png");
-  background-size: 100% 100%;
-}
-.page4 .testingResult .content img:nth-child(2) {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 89.06666667vw;
-  height: 100.93333333vw;
-}
-.page4 .testingResult .content img:nth-child(3) {
-  position: absolute;
-  top: 56vw;
-  left: 8.26666667vw;
-  width: 86.4vw;
-  height: 49.2vw;
+  width: 86.26666667vw;
+  height: 98.53333333vw;
+  margin-left: -43.13333333vw;
+  clip-path: polygon(5% 13%, 50% 7%, 95% 13%, 95% 54%, 50% 97%, 5% 55%);
+  -webkit-clip-path: polygon(5% 13%, 50% 7%, 95% 13%, 95% 54%, 50% 97%, 5% 55%);
+  overflow: hidden;
 }
 .page4 .testingResult .content .picture {
   position: absolute;
@@ -760,6 +860,21 @@ html {
   width: 100vw;
   height: 195.6vw;
   margin-left: -50vw;
+}
+.page4 .testingResult .shield2 {
+  position: absolute;
+  top: 26.13333333vw;
+  left: 50%;
+  width: 86.26666667vw;
+  height: 98.53333333vw;
+  margin-left: -43.13333333vw;
+}
+.page4 .testingResult .shield3 {
+  position: absolute;
+  top: 85.33333333vw;
+  left: 14.13333333vw;
+  width: 86.4vw;
+  height: 49.2vw;
 }
 .page4 .testingResult p {
   position: absolute;
@@ -822,50 +937,54 @@ html {
   left: 0;
   width: 100%;
   height: 100%;
+  background: url("../img/bg.png") no-repeat;
+  background-size: 100% 100%;
 }
-.page4 .share .music {
+.page4 .share .box2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.page4 .share .box2 .music {
   position: absolute;
   top: 10.66666667vw;
   right: 7.73333333vw;
   width: 10.53333333vw;
   height: 10.53333333vw;
 }
-.page4 .share .music img {
+.page4 .share .box2 .music img {
   width: 100%;
   height: 100%;
 }
-.page4 .share .logo {
+.page4 .share .box2 .logo {
   position: absolute;
   top: 10.93333333vw;
   left: 10.93333333vw;
   width: 12.93333333vw;
   height: 17.2vw;
 }
-.page4 .share .content {
+.page4 .share .box2 .shield {
   position: absolute;
   top: 30vw;
   left: 50%;
   width: 89.06666667vw;
   height: 100.93333333vw;
   margin-left: -44.53333333vw;
-  background: url("../img/page8-shield.png");
-  background-size: 100% 100%;
 }
-.page4 .share .content img:nth-child(2) {
+.page4 .share .box2 .content {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 30vw;
+  left: 50%;
   width: 89.06666667vw;
   height: 100.93333333vw;
+  margin-left: -44.53333333vw;
+  clip-path: polygon(5% 13%, 50% 7%, 95% 13%, 95% 54%, 50% 97%, 5% 55%);
+  -webkit-clip-path: polygon(5% 13%, 50% 7%, 95% 13%, 95% 54%, 50% 97%, 5% 55%);
+  overflow: hidden;
 }
-.page4 .share .content img:nth-child(3) {
-  position: absolute;
-  top: 56vw;
-  left: 8.26666667vw;
-  width: 86.4vw;
-  height: 49.2vw;
-}
-.page4 .share .content .picture {
+.page4 .share .box2 .content .picture {
   position: absolute;
   top: -25.73333333vw;
   left: 50%;
@@ -873,7 +992,23 @@ html {
   height: 195.6vw;
   margin-left: -50vw;
 }
-.page4 .share p {
+.page4 .share .box2 .shield2 {
+  position: absolute;
+  top: 30vw;
+  left: 50%;
+  width: 89.06666667vw;
+  height: 100.93333333vw;
+  margin-left: -44.53333333vw;
+}
+.page4 .share .box2 .shield3 {
+  position: absolute;
+  top: 88vw;
+  left: 55%;
+  width: 86.4vw;
+  height: 49.2vw;
+  margin-left: -43.2vw;
+}
+.page4 .share .box2 p {
   position: absolute;
   top: 136vw;
   left: 50%;
@@ -884,13 +1019,13 @@ html {
   font-size: 4.26666667vw;
   text-align: center;
 }
-.page4 .share p a {
+.page4 .share .box2 p a {
   color: #fff;
   font-size: 4vw;
   text-align: center;
   margin-right: 2.13333333vw;
 }
-.page4 .share .title {
+.page4 .share .box2 .title {
   position: absolute;
   top: 145.73333333vw;
   left: 50%;
@@ -898,7 +1033,7 @@ html {
   height: 10.4vw;
   margin-left: -24.8vw;
 }
-.page4 .share .text {
+.page4 .share .box2 .text {
   position: absolute;
   top: 162.4vw;
   left: 50%;
@@ -906,7 +1041,7 @@ html {
   height: 8.13333333vw;
   margin-left: -24.86666667vw;
 }
-.page4 .share .stock {
+.page4 .share .box2 .stock {
   position: absolute;
   top: 176.13333333vw;
   left: 50%;
@@ -914,11 +1049,11 @@ html {
   height: 12.4vw;
   margin-left: -17.66666667vw;
 }
-.page4 .share .stock img {
+.page4 .share .box2 .stock img {
   width: 100%;
   height: 100%;
 }
-.page4 .share .get {
+.page4 .share .box2 .get {
   position: absolute;
   top: 189.46666667vw;
   left: 50%;
@@ -926,18 +1061,18 @@ html {
   height: 12.4vw;
   margin-left: -17.66666667vw;
 }
-.page4 .share .get img {
+.page4 .share .box2 .get img {
   width: 100%;
   height: 100%;
 }
-.page4 .share .qr {
+.page4 .share .box2 .qr {
   position: absolute;
   bottom: 7.2vw;
   left: 7.2vw;
   width: 16vw;
   height: 16vw;
 }
-.page4 .share .product {
+.page4 .share .box2 .product {
   position: absolute;
   bottom: 0;
   right: 0;
@@ -1009,29 +1144,24 @@ html {
   width: 12.93333333vw;
   height: 17.2vw;
 }
+.page5 .testingResult .shield {
+  position: absolute;
+  top: 26.13333333vw;
+  left: 50%;
+  width: 86.26666667vw;
+  height: 98.53333333vw;
+  margin-left: -43.13333333vw;
+}
 .page5 .testingResult .content {
   position: absolute;
-  top: 22.4vw;
+  top: 26.13333333vw;
   left: 50%;
-  width: 96vw;
-  height: 106.93333333vw;
-  margin-left: -48vw;
-  background: url("../img/page7-shield.png");
-  background-size: 100% 100%;
-}
-.page5 .testingResult .content img:nth-child(2) {
-  position: absolute;
-  top: 0.26666667vw;
-  left: 6.4vw;
-  width: 84vw;
-  height: 106.93333333vw;
-}
-.page5 .testingResult .content img:nth-child(3) {
-  position: absolute;
-  top: 0vw;
-  left: 58.8vw;
-  width: 35.86666667vw;
-  height: 106.93333333vw;
+  width: 86.26666667vw;
+  height: 98.53333333vw;
+  margin-left: -43.13333333vw;
+  clip-path: polygon(5% 13%, 50% 7%, 95% 13%, 95% 54%, 50% 97%, 5% 55%);
+  -webkit-clip-path: polygon(5% 13%, 50% 7%, 95% 13%, 95% 54%, 50% 97%, 5% 55%);
+  overflow: hidden;
 }
 .page5 .testingResult .content .picture {
   position: absolute;
@@ -1040,6 +1170,21 @@ html {
   width: 100vw;
   height: 195.6vw;
   margin-left: -50vw;
+}
+.page5 .testingResult .shield2 {
+  position: absolute;
+  top: 26.13333333vw;
+  left: 50%;
+  width: 86.26666667vw;
+  height: 98.53333333vw;
+  margin-left: -43.13333333vw;
+}
+.page5 .testingResult .shield3 {
+  position: absolute;
+  top: 22.4vw;
+  left: 58.8vw;
+  width: 35.86666667vw;
+  height: 106.93333333vw;
 }
 .page5 .testingResult p {
   position: absolute;
@@ -1102,50 +1247,54 @@ html {
   left: 0;
   width: 100%;
   height: 100%;
+  background: url("../img/bg.png") no-repeat;
+  background-size: 100% 100%;
 }
-.page5 .share .music {
+.page5 .share .box3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.page5 .share .box3 .music {
   position: absolute;
   top: 10.66666667vw;
   right: 7.73333333vw;
   width: 10.53333333vw;
   height: 10.53333333vw;
 }
-.page5 .share .music img {
+.page5 .share .box3 .music img {
   width: 100%;
   height: 100%;
 }
-.page5 .share .logo {
+.page5 .share .box3 .logo {
   position: absolute;
   top: 10.93333333vw;
   left: 10.93333333vw;
   width: 12.93333333vw;
   height: 17.2vw;
 }
-.page5 .share .content {
+.page5 .share .box3 .shield {
   position: absolute;
   top: 22.4vw;
   left: 50%;
   width: 96vw;
   height: 106.93333333vw;
   margin-left: -48vw;
-  background: url("../img/page7-shield.png");
-  background-size: 100% 100%;
 }
-.page5 .share .content img:nth-child(2) {
+.page5 .share .box3 .content {
   position: absolute;
-  top: 0.26666667vw;
-  left: 6.4vw;
-  width: 84vw;
+  top: 22.4vw;
+  left: 50%;
+  width: 96vw;
   height: 106.93333333vw;
+  margin-left: -48vw;
+  clip-path: polygon(5% 13%, 50% 7%, 95% 13%, 95% 54%, 50% 97%, 5% 55%);
+  -webkit-clip-path: polygon(5% 13%, 50% 7%, 95% 13%, 95% 54%, 50% 97%, 5% 55%);
+  overflow: hidden;
 }
-.page5 .share .content img:nth-child(3) {
-  position: absolute;
-  top: 0vw;
-  left: 58.8vw;
-  width: 35.86666667vw;
-  height: 106.93333333vw;
-}
-.page5 .share .content .picture {
+.page5 .share .box3 .content .picture {
   position: absolute;
   top: -18.66666667vw;
   left: 50%;
@@ -1153,7 +1302,22 @@ html {
   height: 195.6vw;
   margin-left: -50vw;
 }
-.page5 .share p {
+.page5 .share .box3 .shield2 {
+  position: absolute;
+  top: 22.4vw;
+  left: 50%;
+  width: 96vw;
+  height: 106.93333333vw;
+  margin-left: -48vw;
+}
+.page5 .share .box3 .shield3 {
+  position: absolute;
+  top: 17.06666667vw;
+  left: 58.8vw;
+  width: 35.86666667vw;
+  height: 106.93333333vw;
+}
+.page5 .share .box3 p {
   position: absolute;
   top: 136vw;
   left: 50%;
@@ -1164,13 +1328,13 @@ html {
   font-size: 4.26666667vw;
   text-align: center;
 }
-.page5 .share p a {
+.page5 .share .box3 p a {
   color: #fff;
   font-size: 4vw;
   text-align: center;
   margin-right: 2.13333333vw;
 }
-.page5 .share .title {
+.page5 .share .box3 .title {
   position: absolute;
   top: 145.73333333vw;
   left: 50%;
@@ -1178,7 +1342,7 @@ html {
   height: 10.4vw;
   margin-left: -24.8vw;
 }
-.page5 .share .text {
+.page5 .share .box3 .text {
   position: absolute;
   top: 160vw;
   left: 50%;
@@ -1186,7 +1350,7 @@ html {
   height: 8.13333333vw;
   margin-left: -33.73333333vw;
 }
-.page5 .share .stock {
+.page5 .share .box3 .stock {
   position: absolute;
   top: 176.13333333vw;
   left: 50%;
@@ -1194,11 +1358,11 @@ html {
   height: 12.4vw;
   margin-left: -17.66666667vw;
 }
-.page5 .share .stock img {
+.page5 .share .box3 .stock img {
   width: 100%;
   height: 100%;
 }
-.page5 .share .get {
+.page5 .share .box3 .get {
   position: absolute;
   top: 189.46666667vw;
   left: 50%;
@@ -1206,18 +1370,18 @@ html {
   height: 12.4vw;
   margin-left: -17.66666667vw;
 }
-.page5 .share .get img {
+.page5 .share .box3 .get img {
   width: 100%;
   height: 100%;
 }
-.page5 .share .qr {
+.page5 .share .box3 .qr {
   position: absolute;
   bottom: 7.2vw;
   left: 7.2vw;
   width: 16vw;
   height: 16vw;
 }
-.page5 .share .product {
+.page5 .share .box3 .product {
   position: absolute;
   bottom: 0;
   right: 0;
@@ -1382,15 +1546,30 @@ html {
   height: 24.66666667vw;
   margin-left: -33.73333333vw;
 }
+.page7 .box2 span {
+  position: absolute;
+  left: 10.93333333vw;
+  color: #fff;
+}
+.page7 .box2 span:nth-of-type(1) {
+  top: 158.26666667vw;
+}
+.page7 .box2 span:nth-of-type(2) {
+  top: 168vw;
+}
+.page7 .box2 span:nth-of-type(3) {
+  top: 177.06666667vw;
+}
 .page7 .box2 input {
   position: absolute;
-  left: 15.73333333vw;
+  left: 20vw;
   display: block;
   color: #fff;
   border: none;
   width: 69.06666667vw;
   height: 4.26666667vw;
   border-bottom: 1px solid #a4abd3;
+  padding-left: 4vw;
 }
 .page7 .box2 input:nth-of-type(1) {
   top: 158.26666667vw;
@@ -1399,7 +1578,9 @@ html {
   top: 168vw;
 }
 .page7 .box2 input:nth-of-type(3) {
+  left: 31.46666667vw;
   top: 177.06666667vw;
+  width: 53.33333333vw;
 }
 .page7 .box2 .button {
   position: absolute;
@@ -1462,7 +1643,40 @@ html {
   height: 76.4vw;
   margin-left: -32.33333333vw;
 }
-@media screen and (max-height: 736px) {
+@keyframes rotate {
+  0% {
+    transform: rotateY(0deg);
+  }
+  25% {
+    transform: rotateY(45deg);
+  }
+  50% {
+    transform: rotateY(0deg);
+  }
+  75% {
+    transform: rotateY(-45deg);
+  }
+  100% {
+    transform: rotateY(0deg);
+  }
+}
+@keyframes move {
+  from {
+    left: 0;
+  }
+  to {
+    left: 53.6vw;
+  }
+}
+@keyframes show {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@media screen and (max-height: 788px) {
   .page1 {
     top: -6.66666667vw;
     transform: scale(0.9);
@@ -1484,10 +1698,6 @@ html {
     transform: scale(0.9);
     top: -8.53333333vw;
   }
-  .page3 .share {
-    transform: scale(0.9);
-    top: -6.66666667vw;
-  }
   .page4 .interim img:nth-child(1) {
     top: 27.2vw;
   }
@@ -1501,14 +1711,14 @@ html {
     transform: scale(0.9);
     top: -9.6vw;
   }
-  .page4 .share {
+  .page4 .share .box2 {
     transform: scale(0.85);
     top: -13.33333333vw;
   }
-  .page4 .share .qr {
+  .page4 .share .box2 .qr {
     bottom: -24vw;
   }
-  .page4 .share .product {
+  .page4 .share .box2 .product {
     bottom: -32vw;
     right: -9.33333333vw;
   }
@@ -1525,14 +1735,14 @@ html {
     transform: scale(0.85);
     top: -9.6vw;
   }
-  .page5 .share {
+  .page5 .share .box3 {
     transform: scale(0.85);
     top: -13.33333333vw;
   }
-  .page5 .share .qr {
+  .page5 .share .box3 .qr {
     bottom: -24vw;
   }
-  .page5 .share .product {
+  .page5 .share .box3 .product {
     bottom: -32vw;
     right: -9.33333333vw;
   }
@@ -1560,13 +1770,15 @@ html {
     transform: scale(0.85);
   }
   .page7 .box2 input:nth-of-type(1) {
-    top: 155.2vw;
+    top: 158.13333333vw;
   }
   .page7 .box2 input:nth-of-type(2) {
-    top: 165.06666667vw;
+    top: 168vw;
   }
   .page7 .box2 input:nth-of-type(3) {
-    top: 173.86666667vw;
+    top: 177.06666667vw;
+    left: 26.66666667vw;
+    width: 64vw;
   }
   .page7 .box2 .button {
     top: 186.66666667vw;
