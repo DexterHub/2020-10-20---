@@ -1,22 +1,22 @@
 $(function(){
-    // var loading = setInterval(function() {
-    //     if ($(".loading .line").width() < 243) {
-    //         $(".loading .line").css("width", $(".loading .line").width() + 3 + 'px');
-    //         $("#text").html(parseInt($(".loading .line").width() / 2.42) + '%');
-    //         $(".loading .sailboat").css("left", $(".loading .line").width() + 40 + 'px');
-    //     } else {
-    //         $(".loading").fadeOut();
-    //         $(".home").fadeIn();
-    //         setTimeout(function() {
+    var loading = setInterval(function() {
+        if ($(".loading .line").width() < 243) {
+            $(".loading .line").css("width", $(".loading .line").width() + 3 + 'px');
+            $("#text").html(parseInt($(".loading .line").width() / 2.42) + '%');
+            $(".loading .sailboat").css("left", $(".loading .line").width() + 40 + 'px');
+        } else {
+            $(".loading").fadeOut();
+            $(".home").fadeIn();
+            setTimeout(function() {
                 
-    //             clearInterval(loading);
-    //         }, 100);
-    //     }
-    // }, 100);
-    // $(".home .button").on("click",function(){
-    //     $(".home").fadeOut();
-    //     $(".page1").fadeIn();
-    // })
+                clearInterval(loading);
+            }, 100);
+        }
+    }, 100);
+    $(".home .button").on("click",function(){
+        $(".home").fadeOut();
+        $(".page1").fadeIn();
+    })
     $('#photos').on("change", function (e) {
         var file = this.files[0];
         var src = window.URL.createObjectURL(file);
