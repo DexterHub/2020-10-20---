@@ -1,22 +1,22 @@
 $(function(){
-    var loading = setInterval(function() {
-        if ($(".loading .line").width() < 243) {
-            $(".loading .line").css("width", $(".loading .line").width() + 3 + 'px');
-            $("#text").html(parseInt($(".loading .line").width() / 2.42) + '%');
-            $(".loading .sailboat").css("left", $(".loading .line").width() + 40 + 'px');
-        } else {
-            $(".loading").fadeOut();
-            $(".home").fadeIn();
-            setTimeout(function() {
+    // var loading = setInterval(function() {
+    //     if ($(".loading .line").width() < 243) {
+    //         $(".loading .line").css("width", $(".loading .line").width() + 3 + 'px');
+    //         $("#text").html(parseInt($(".loading .line").width() / 2.42) + '%');
+    //         $(".loading .sailboat").css("left", $(".loading .line").width() + 40 + 'px');
+    //     } else {
+    //         $(".loading").fadeOut();
+    //         $(".home").fadeIn();
+    //         setTimeout(function() {
                 
-                clearInterval(loading);
-            }, 100);
-        }
-    }, 100);
-    $(".home .button").on("click",function(){
-        $(".home").fadeOut();
-        $(".page1").fadeIn();
-    })
+    //             clearInterval(loading);
+    //         }, 100);
+    //     }
+    // }, 100);
+    // $(".home .button").on("click",function(){
+    //     $(".home").fadeOut();
+    //     $(".page1").fadeIn();
+    // })
     $('#photos').on("change", function (e) {
         var file = this.files[0];
         var src = window.URL.createObjectURL(file);
@@ -133,6 +133,14 @@ $(function(){
         $(".page3 .testingResult").fadeOut();
         $(".page3 .share .content .picture").attr("src", $("#box").attr("src"));
         $(".page3 .share").fadeIn();
+        html2canvas(document.querySelector("#capture")).then(canvas => {
+            document.body.appendChild(canvas);
+            var c = document.querySelector('canvas');
+            console.log(c);
+            var url = c.toDataURL();
+            var a = $("<img>").attr("src", url).appendTo("body");
+            $(a).addClass("canvas-img");
+        });
     });
     $(".page3 .testingResult .save").on("click",function(){
         $(".page3 .testingResult").fadeOut();
@@ -150,37 +158,18 @@ $(function(){
         }
         $(flower[selectFrom(0,flower.length-1)]).fadeIn();
     });
-    $(".page3 .share .stock").on({
-        touchstart: function (e) {
-            // 长按事件触发
-            timeOutEvent = setTimeout(function () {
-                timeOutEvent = 0;
-                html2canvas(document.querySelector("#capture")).then(canvas => {
-                    document.body.appendChild(canvas);
-                    var c = document.querySelector('canvas');
-                    console.log(c);
-                    var url = c.toDataURL();
-                    var a = $("<img>").attr("src", url).appendTo("body");
-                });
-            }, 400);
-            //长按400毫秒
-            // e.preventDefault();
-        },
-        touchmove: function () {
-            clearTimeout(timeOutEvent);
-            timeOutEvent = 0;
-        },
-        touchend: function () {
-            clearTimeout(timeOutEvent);
-            if (timeOutEvent != 0) {
-            }
-            return false;
-        }
-    })
     $(".page4 .testingResult .anew").on("click",function(){
         $(".page4 .testingResult").fadeOut();
         $(".page4 .share .content .picture").attr("src", $("#box").attr("src"));
         $(".page4 .share").fadeIn();
+        html2canvas(document.querySelector("#capture2")).then(canvas => {
+            document.body.appendChild(canvas);
+            var c = document.querySelector('canvas');
+            console.log(c);
+            var url = c.toDataURL();
+            var a = $("<img>").attr("src", url).appendTo("body");
+            $(a).addClass("canvas-img");
+        });
     });
     $(".page4 .testingResult .save").on("click",function(){
         $(".page4 .testingResu").fadeOut();
@@ -198,37 +187,18 @@ $(function(){
         }
         $(flower[selectFrom(0,flower.length-1)]).fadeIn();
     });
-    $(".page4 .share .stock").on({
-        touchstart: function (e) {
-            // 长按事件触发
-            timeOutEvent = setTimeout(function () {
-                timeOutEvent = 0;
-                html2canvas(document.querySelector("#capture2")).then(canvas => {
-                    document.body.appendChild(canvas);
-                    var c = document.querySelector('canvas');
-                    console.log(c);
-                    var url = c.toDataURL();
-                    var a = $("<img>").attr("src", url).appendTo("body");
-                });
-            }, 400);
-            //长按400毫秒
-            // e.preventDefault();
-        },
-        touchmove: function () {
-            clearTimeout(timeOutEvent);
-            timeOutEvent = 0;
-        },
-        touchend: function () {
-            clearTimeout(timeOutEvent);
-            if (timeOutEvent != 0) {
-            }
-            return false;
-        }
-    })
     $(".page5 .testingResult .anew").on("click",function(){
         $(".page5 .testingResult").fadeOut();
         $(".page5 .share .content .picture").attr("src", $("#box").attr("src"));
         $(".page5 .share").fadeIn();
+        html2canvas(document.querySelector("#capture3")).then(canvas => {
+            document.body.appendChild(canvas);
+            var c = document.querySelector('canvas');
+            console.log(c);
+            var url = c.toDataURL();
+            var a = $("<img>").attr("src", url).appendTo("body");
+            $(a).addClass("canvas-img");
+        });
     });
     $(".page5 .testingResult .save").on("click",function(){
         $(".page5 .testingResult").fadeOut();
@@ -246,15 +216,6 @@ $(function(){
         }
         $(flower[selectFrom(0,flower.length-1)]).fadeIn();
     });
-    $(".page5 .share .stock").on("click",function(){
-        html2canvas(document.querySelector("#capture3")).then(canvas => {
-            document.body.appendChild(canvas);
-            var c = document.querySelector('canvas');
-            console.log(c);
-            var url = c.toDataURL();
-            var a = $("<img>").attr("src", url).appendTo("body");
-        });
-    })
     $(".page7 .box .button").on("click",function(){
         $(".page7 .box").fadeOut();
         $(".page7 .box2").fadeIn();

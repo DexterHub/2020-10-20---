@@ -637,25 +637,32 @@ html {
   background: url("../img/bg.png") no-repeat;
   background-size: 100% 100%;
 }
-.page3 .share .music {
+.page3 .share .box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.page3 .share .box .music {
   position: absolute;
   top: 7.33333333vw;
   right: 7.73333333vw;
   width: 10.53333333vw;
   height: 10.53333333vw;
 }
-.page3 .share .music img {
+.page3 .share .box .music img {
   width: 100%;
   height: 100%;
 }
-.page3 .share .logo {
+.page3 .share .box .logo {
   position: absolute;
   top: 5.86666667vw;
   left: 10.93333333vw;
   width: 12.93333333vw;
   height: 17.2vw;
 }
-.page3 .share .shield {
+.page3 .share .box .shield {
   position: absolute;
   top: 19.2vw;
   left: 50%;
@@ -663,7 +670,7 @@ html {
   height: 98.53333333vw;
   margin-left: -43.13333333vw;
 }
-.page3 .share .content {
+.page3 .share .box .content {
   position: absolute;
   top: 19.2vw;
   left: 50%;
@@ -674,7 +681,7 @@ html {
   -webkit-clip-path: polygon(5% 13%, 50% 7%, 95% 13%, 95% 54%, 50% 97%, 5% 55%);
   overflow: hidden;
 }
-.page3 .share .content .picture {
+.page3 .share .box .content .picture {
   position: absolute;
   top: -25.73333333vw;
   left: 50%;
@@ -682,7 +689,7 @@ html {
   height: 195.6vw;
   margin-left: -50vw;
 }
-.page3 .share .shield2 {
+.page3 .share .box .shield2 {
   position: absolute;
   top: 19.2vw;
   left: 50%;
@@ -690,7 +697,7 @@ html {
   height: 98.53333333vw;
   margin-left: -43.13333333vw;
 }
-.page3 .share .shield3 {
+.page3 .share .box .shield3 {
   position: absolute;
   top: 19.2vw;
   left: 50%;
@@ -698,7 +705,7 @@ html {
   height: 98.53333333vw;
   margin-left: -43.13333333vw;
 }
-.page3 .share p {
+.page3 .share .box p {
   position: absolute;
   top: 123.2vw;
   left: 50%;
@@ -709,13 +716,13 @@ html {
   font-size: 4.26666667vw;
   text-align: center;
 }
-.page3 .share p a {
+.page3 .share .box p a {
   color: #fff;
   font-size: 4vw;
   text-align: center;
   margin-right: 2.13333333vw;
 }
-.page3 .share .title {
+.page3 .share .box .title {
   position: absolute;
   top: 133.73333333vw;
   left: 50%;
@@ -723,7 +730,7 @@ html {
   height: 10.4vw;
   margin-left: -24.8vw;
 }
-.page3 .share .text {
+.page3 .share .box .text {
   position: absolute;
   top: 149.33333333vw;
   left: 50%;
@@ -731,7 +738,7 @@ html {
   height: 8.13333333vw;
   margin-left: -24.86666667vw;
 }
-.page3 .share .stock {
+.page3 .share .box .stock {
   position: absolute;
   top: 162.13333333vw;
   left: 50%;
@@ -739,11 +746,11 @@ html {
   height: 12.4vw;
   margin-left: -17.66666667vw;
 }
-.page3 .share .stock img {
+.page3 .share .box .stock img {
   width: 100%;
   height: 100%;
 }
-.page3 .share .get {
+.page3 .share .box .get {
   position: absolute;
   top: 175.46666667vw;
   left: 50%;
@@ -751,18 +758,18 @@ html {
   height: 12.4vw;
   margin-left: -17.66666667vw;
 }
-.page3 .share .get img {
+.page3 .share .box .get img {
   width: 100%;
   height: 100%;
 }
-.page3 .share .qr {
+.page3 .share .box .qr {
   position: absolute;
   bottom: 7.2vw;
   left: 7.2vw;
   width: 16vw;
   height: 16vw;
 }
-.page3 .share .product {
+.page3 .share .box .product {
   position: absolute;
   bottom: 0;
   right: 0;
@@ -1697,6 +1704,17 @@ html {
   .page3 .testingResult {
     transform: scale(0.9);
     top: -8.53333333vw;
+  }
+  .page3 .share .box {
+    transform: scale(0.85);
+    top: -13.33333333vw;
+  }
+  .page3 .share .box .qr {
+    bottom: -24vw;
+  }
+  .page3 .share .box .product {
+    bottom: -32vw;
+    right: -9.33333333vw;
   }
   .page4 .interim img:nth-child(1) {
     top: 27.2vw;
