@@ -107,6 +107,7 @@ $(function(){
                 clearInterval(timer);
             },4000);
             $(".page3 .testingResult .content .picture").attr("src", $("#box").attr("src"));
+            $("#box").attr("src","");
         }else if($(".result .nose").hasClass("severity")){
             $(".page4").fadeIn();
             $(".page4 .interim").fadeIn();
@@ -117,6 +118,7 @@ $(function(){
                 clearInterval(timer);
             },4000);
             $(".page4 .testingResult .content .picture").attr("src", $("#box").attr("src"));
+            $("#box").attr("src","");
         }else if($(".result .face").hasClass("severity")){
             $(".page5").fadeIn();
             $(".page5 .interim").fadeIn();
@@ -127,6 +129,7 @@ $(function(){
                 clearInterval(timer);
             },4000);
             $(".page5 .testingResult .content .picture").attr("src", $("#box").attr("src"));
+            $("#box").attr("src","");
         }
     })
     $(".page3 .testingResult .anew").on("click",function(){
@@ -146,11 +149,14 @@ $(function(){
         $(".page3 .testingResult").fadeOut();
         $(".page3").fadeOut();
         $(".page1").fadeIn();
+        $("#box").css("pointer-events","auto");
+        $(".picture").css("pointer-events","auto");
     });
     $(".page3 .share .get").on("click",function(){
         $(".page3").fadeOut();
         var canvas = document.querySelector('canvas');
         $(canvas).fadeOut();
+        
         var flower= [".page6",".page7"];
         function selectFrom(minValue,maxValue){
             var num = maxValue - minValue + 1;
@@ -175,11 +181,14 @@ $(function(){
         $(".page4 .testingResu").fadeOut();
         $(".page4").fadeOut();
         $(".page1").fadeIn();
+        $("#box").css("pointer-events","auto");
+        $(".picture").css("pointer-events","auto");
     });
     $(".page4 .share .get").on("click",function(){
         $(".page4").fadeOut();
         var canvas = document.querySelector('canvas');
         $(canvas).fadeOut();
+        $(".canvas-img").fadeOut();
         var flower= [".page6",".page7"];
         function selectFrom(minValue,maxValue){
             var num = maxValue - minValue + 1;
@@ -204,11 +213,14 @@ $(function(){
         $(".page5 .testingResult").fadeOut();
         $(".page5").fadeOut();
         $(".page1").fadeIn();
+        $("#box").css("pointer-events","auto");
+        $(".picture").css("pointer-events","auto");
     });
     $(".page5 .share .get").on("click",function(){
         $(".page5").fadeOut();
         var canvas = document.querySelector('canvas');
         $(canvas).fadeOut();
+        $(".canvas-img").fadeOut();
         var flower= [".page6",".page7"];
         function selectFrom(minValue,maxValue){
             var num = maxValue - minValue + 1;
